@@ -8,9 +8,6 @@ import time
 
 URL = 'http://1.1.1.3/ac_portal/login.php'
 
-# username = '20190933t'
-# password = '@Chen2003'
-
 def login():
     # 读取文本数据
     f = open('data.txt','r')
