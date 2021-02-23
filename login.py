@@ -4,6 +4,7 @@
 import requests
 import urllib
 import os
+import time
 
 URL = 'http://1.1.1.3/ac_portal/login.php'
 
@@ -33,4 +34,6 @@ def login():
 if __name__ == '__main__':
     while True:
         login()
+        # 每4秒进行一次登录
+        time.sleep(4)
         
