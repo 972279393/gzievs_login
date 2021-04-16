@@ -33,10 +33,8 @@ def login():
             print('successful!')
         else:
             print('账号或密码有错!')
-    except KeyboardInterrupt:
-        print('停止程序')
-        time.sleep(1)
-        exit()
+    except Exception as e:
+        print('连接失败')
 
 if __name__ == '__main__':
     while True:
